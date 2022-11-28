@@ -1,0 +1,28 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, "ヒラギノ丸ゴ Pro W4", HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, Osaka, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+code {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, "ヒラギノ丸ゴ Pro W4", HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, Osaka, sans-serif;
+}
+
+
+.visible-scrollbar,
+.invisible-scrollbar,
+.mostly-customized-scrollbar,
+::-webkit-scrollbar-thumb  {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 6px;
+} 

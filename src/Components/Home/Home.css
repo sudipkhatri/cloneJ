@@ -1,0 +1,669 @@
+.navbar__photo{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    z-index: 0;
+
+}
+.background__pic{
+
+  width: 100vw;
+  height: 100vh;
+  
+  /* background-color: transparent; */
+
+}
+
+.text__desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0.4;
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+   
+}
+
+.text{
+    
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    color: #f4f4f4;
+    margin: 10px 4px;
+
+}
+
+.text > span{
+    margin: 4px;
+}
+
+.pic__control{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.pic__action{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 750px;
+  height: 52px;
+  /* margin: 8px; */
+  left: 6px;
+  top: -60px;
+  background-color: #f4f4f4;
+}
+
+.pic__row{
+  display: flex;
+  flex: 0.6;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.action__button{
+  display: flex;
+  flex: 0.4;
+  justify-content: flex-end;
+}
+
+.btn{
+
+    border: none;
+    margin: 6px;
+    background-color: #f4f4f4;
+    font-size: 1.15rem;
+    color: #000;
+    cursor: pointer;
+}
+
+/* services  */
+.services{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+ 
+}
+
+.image__div, .text__div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image__div{
+  flex: 0.4;
+}
+
+.text__div{
+  flex-direction: column;
+  flex:0.4;
+  height: 600px;
+}
+
+.image__div > img{
+  width: 560px;
+  height: 577px;
+}
+
+.mini__image{
+  position: relative;
+  top: 50px;
+  left: 180px;
+  z-index: 0;
+
+}
+
+.desc__text{
+  position: relative;
+  top: -200px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+
+.title{
+
+  margin: 8px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(37, 54, 182);
+
+}
+
+.des{
+
+  display: block;
+  width: 70%;
+  margin: 8px;
+  font-size: 1.2rem;
+}
+
+.second__info{
+  margin-top: 60px; 
+}
+@media (max-width: 1024px) {
+
+  .image__div > img{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .services{
+    overflow: hidden;
+  }
+
+  .image__div > img{
+    width: 400px;
+    height: 400px;
+  }
+  .mini__image{
+    top: 50px;
+    left: -10px;
+  }
+}
+
+/* images  */
+
+.images{
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  min-height: 100vh;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.row__images{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.wrap{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+.col__car, .col__cookies, .col__cartoon {
+ 
+  width: 80vw;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  background-size: cover;
+  -webkit-filter: brightness(70%);
+    
+
+}
+
+.wrap:hover > .col__car, .wrap:hover >.col__cookies, .wrap:hover>.col__cartoon {
+    transform: scale(1.2);
+    cursor: pointer;
+   -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+
+.col__car{
+  border: 1px solid #000;
+  background-image: url('https://www.nakagawashokai.co.jp/images/top/list_1.jpg');
+}
+
+.col__cookies{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/list_2.jpg");
+}
+
+.col__cartoon{
+  background-image: url('https://www.nakagawashokai.co.jp/images/top/list_3.jpg');
+}
+
+.texts{
+  display: flex;
+  width: 50vw;
+  height: 10px;
+}
+
+.text__end{
+  position: absolute;
+  width: 50%;
+  height: 150px;
+  color: #f4f4f4;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+}
+
+.texts>span{
+  width: 300px;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5px;
+  margin: 8px 0;
+  color: #f4f4f4;
+
+}
+
+.text__front{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 150px;
+   gap: 10px;
+}
+
+.texts > h1{
+  width: 300px;
+  display: block;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: #f4f4f4;
+}
+
+.texts > p{
+  width: 300px;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1.1px;
+  color: #f4f4f4;
+}
+
+
+/* 
+.col__car:hover:after{
+      border: 15px solid #1F5099;
+}
+
+.col__car img::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 0px solid #1F5099;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+} */
+
+/* company css */
+
+.company{
+  width: 85%;
+  height: 300px;
+  background-color: #1F5099;
+  margin: 100px 0;
+}
+
+.company__title{
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f4f4f4;
+}
+
+.company__desc{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 400px;
+}
+
+ .wrap:hover >.philo, .wrap:hover > .msg, .wrap:hover> .history, .wrap:hover>.about{
+  transform: scale(1.2);
+  cursor: pointer;
+   -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+
+}
+
+.philo, .history, .msg, .about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-size: cover;
+  width: 280px;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+  color: #f4f4f4;
+}
+
+.philo{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/img_02.jpg");
+}
+
+.msg{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/img_03.jpg");
+}
+
+.history{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/img_04.jpg");
+}
+
+.about{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/img_05.jpg");
+}
+
+
+/* flow */
+.flow{
+  background-image: url("https://www.nakagawashokai.co.jp/images/top/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 600px;
+  margin-top: 120px;
+}
+
+.flow > .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow > .row > .col{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+/* .col__image{
+  flex: 0.6;
+} */
+
+
+.col__image > img{
+  width: 500px;
+  height: 450px;
+  position: relative;
+  top: -70px;
+}
+
+.flow > .row > .col__desc{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  /* flex: 0.4; */
+}
+
+.flow > .row > .col__desc > h1{
+  font-size: 4rem;
+  color: #f4f4f4;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+
+.flow > .row > .col__desc > p{
+  color: #f4f4f4;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1px; 
+  width: 70%;
+  font-size: 1.25rem;
+}
+
+.flow > .row > .col__desc > button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+
+.flow > .row > .col__desc > button  > span{
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 2px;
+}
+
+.flow > .row > .col__desc > button:hover{
+  cursor: pointer;
+}
+.flow > .row > .col__desc > button  > span:hover{
+
+  left: 30px;
+  cursor: pointer; 
+}
+
+/* recruit and contact*/
+
+.recruit{
+  width: 100vw;
+  height: auto;
+  background-color: #1F5099;
+}
+
+.recruit__div{
+  width: 90%;
+  background-color: #f4f4f4;
+  height: 400px;
+  position: relative;
+  float: right;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col2__recruit{
+  display: flex;
+  gap: 10px;
+  flex: 0.8;
+}
+
+.col__recruit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 40px;
+  flex: 0.2;
+}
+
+.contact{
+  width: 100%;
+  background-color: #1F5099;
+}
+
+.row__contact{
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.col__contact, .contact__medium, .phone{
+  display: flex;
+  width:100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #f4f4f4;
+}
+.col__contact{
+  flex: 0.4;
+  gap: 30px;
+}
+
+.col__contact > h1{
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.col__contact > p{
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.col__contact > h1 > span{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.col2__contact{
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex: 0.6;
+  flex-direction: column;
+}
+.contact__medium{
+  gap:10px;
+}
+.contact__medium > .phone, .contact__medium > .mail{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03275d;
+  height: 70px;
+}
+
+.paragraph{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  color: #f4f4f4;
+}
+.paragraph > p{
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list > .links{
+  text-decoration: none;
+  list-style-type: none;
+  color: #f4f4f4;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+}
+
+.list > .links:hover{
+  cursor: pointer;
+}
+.image{
+  background-image: url("https://www.nakagawashokai.co.jp/images/common/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 80%;
+  background-repeat: no-repeat;
+}
+
+/* FOOTER */
+.footer__end{
+  width: 80vw;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  color:#f4f4f4;
+  margin: auto;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+

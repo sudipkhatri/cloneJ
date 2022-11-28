@@ -1,0 +1,142 @@
+.main__header{
+    display: flex;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 10vh;
+    height: auto;  
+    
+}
+nav.scrolled{
+    display: flex;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 10vh;
+    height: auto;
+    background: #f4f4f4;
+    
+}
+
+.scrolled__col > a{
+    color:#3737b0;
+}
+.row{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col__logo, .scrolled__col{
+    
+    padding: 0 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.col__lists{
+    display: flex;
+    justify-content: center; 
+}
+
+.list__items{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    
+} 
+
+.list__name, .scrolled__list {
+    margin: 4px 0 0 0;
+    display: inline-block;
+    list-style-type: none; 
+}
+
+.list__name > a, a, .scrolled__list > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#f4f4f4;
+}
+
+.scrolled__list > a{
+    color:#3737b0;
+}
+
+.icon{
+    display: inline-block;
+    margin: 4px;
+    color:#f4f4f4;
+}
+
+.col__logo > a > svg, .scrolled__col > a >svg{
+    font-size: 2rem;
+    color: #f4f4f4;
+    margin: 2px;
+    position: relative;
+    top: 10px;
+}
+
+.scrolled__col > a >svg{
+    color:#3737b0;
+}
+
+.icon > svg{
+    position: relative;
+    top: 3px; 
+}
+
+.col__logo > a, .scrolled__col > a{
+    margin: 2px;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-size: 700;
+    font-family: cursive;
+}
+
+.col__logo > p, .scrolled__col > p{
+    margin-top: 10px;
+    font-size: 1.15rem;
+    color: #f4f4f4;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    font-family: cursive;
+    
+}
+.scrolled__col > p{
+    color:#3737b0;
+
+    }
+
+
+.logo{
+    width:110px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.scrolled__list > p, .scrolled__list> .number{
+    color:#3737b0;
+}
+
+a:hover, .icon:hover, .number:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  
+  .col__lists{
+    display: none;
+  }
+}
